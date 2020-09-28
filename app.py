@@ -38,10 +38,15 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 	msg = event.message.text
-	s = 'my name is raybot!'
+	r = 'sorry, I can not understand what your are saying'
+	if msg == 'hi':
+		r = 'hi'
+	elif msg = 'Have you eat?'
+		r = 'no yet'
+
 	line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=s))
+        TextSendMessage(text=r))
 
 
 if __name__ == "__main__":
