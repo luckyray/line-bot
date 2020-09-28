@@ -39,10 +39,12 @@ def callback():
 def handle_message(event):
 	msg = event.message.text
 	r = 'sorry, I can not understand what your are saying'
-	if msg == 'hi':
+	if msg in ['hi', 'Hi']:
 		r = 'hi'
 	elif msg == 'Have you eat?':
 		r = 'no yet'
+	elif msg == 'Who are you':
+		r = 'I\' a robot'
 
 	line_bot_api.reply_message(
         event.reply_token,
