@@ -50,8 +50,8 @@ def handle_message(event):
         event.reply_token,
 #        TextSendMessage(text=r))
 		StickerSendMessage(
-			package_id='1',
-			sticker_id='1'
+			package_id='2',
+			sticker_id='23'
 			))
 
 if __name__ == "__main__":
